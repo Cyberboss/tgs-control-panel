@@ -1,19 +1,9 @@
 {
-  "name": "angular-electron",
-  "version": "4.1.0",
-  "description": "Angular 6 with Electron (Typescript + SASS + Hot Reload)",
-  "homepage": "https://github.com/maximegris/angular-electron",
-  "author": {
-    "name": "Maxime GRIS",
-    "email": "maxime.gris@gmail.com"
-  },
-  "keywords": [
-    "angular",
-    "angular 6",
-    "electron",
-    "typescript",
-    "sass"
-  ],
+  "name": "tgs-control-panel",
+  "version": "0.1.0",
+  "description": "Official tgstation-server 4 control panel",
+  "homepage": "https://github.com/tgstation/tgstation-server",
+  "repository": "github:tgstation/tgs-control-panel",
   "main": "main.js",
   "private": true,
   "scripts": {
