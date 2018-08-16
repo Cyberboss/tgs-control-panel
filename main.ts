@@ -1,6 +1,7 @@
 import { app, BrowserWindow, screen } from 'electron';
 import * as path from 'path';
 import * as url from 'url';
+require('update-electron-app')();
 
 let win, serve;
 const args = process.argv.slice(1);
