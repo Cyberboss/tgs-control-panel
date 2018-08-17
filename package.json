@@ -2,7 +2,7 @@
   "name": "tgs-control-panel",
   "version": "0.1.0",
   "description": "Official tgstation-server 4 control panel",
-  "homepage": "https://github.com/tgstation/tgstation-server",
+  "homepage": "https://github.com/tgstation/tgs-control-panel",
   "repository": "github:tgstation/tgs-control-panel",
   "main": "main.js",
   "private": true,
