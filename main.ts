@@ -1,7 +1,7 @@
 import { app, BrowserWindow, screen } from 'electron';
 import * as path from 'path';
 import * as url from 'url';
-require('update-electron-app')();
+import { autoUpdater } from 'electron-updater';
 
 let win, serve;
 const args = process.argv.slice(1);
@@ -48,7 +48,10 @@ try {
   // This method will be called when Electron has finished
   // initialization and is ready to create browser windows.
   // Some APIs can only be used after this event occurs.
-  app.on('ready', createWindow);
+  app.on('ready', () => {
+    autoUpdater.checkForUpdatesAndNotify();
+    createWindow();
+  });
 
   // Quit when all windows are closed.
   app.on('window-all-closed', () => {

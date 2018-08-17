@@ -1,5 +1,6 @@
 {
   "productName": "tgs-control-panel",
+  "appId": "tgstation.controlpanel",
   "directories": {
     "output": "app-builds"
   },
@@ -21,9 +22,7 @@
     ],
   "win": {
     "icon": "dist",
-    "target": [
-      "portable"
-    ]
+    "publish": ["github"]
   },
   "mac": {
     "icon": "dist",
