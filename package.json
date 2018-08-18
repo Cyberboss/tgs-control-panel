@@ -1,19 +1,9 @@
 {
-  "name": "angular-electron",
-  "version": "4.1.0",
-  "description": "Angular 6 with Electron (Typescript + SASS + Hot Reload)",
-  "homepage": "https://github.com/maximegris/angular-electron",
-  "author": {
-    "name": "Maxime GRIS",
-    "email": "maxime.gris@gmail.com"
-  },
-  "keywords": [
-    "angular",
-    "angular 6",
-    "electron",
-    "typescript",
-    "sass"
-  ],
+  "name": "tgs-control-panel",
+  "version": "0.1.0",
+  "description": "Official tgstation-server 4 control panel",
+  "homepage": "https://github.com/tgstation/tgs-control-panel",
+  "repository": "github:tgstation/tgs-control-panel",
   "main": "main.js",
   "private": true,
   "scripts": {
@@ -34,9 +24,12 @@
     "electron:windows": "npm run build:prod && npx electron-builder build --windows",
     "electron:mac": "npm run build:prod && npx electron-builder build --mac",
     "test": "npm run postinstall:web && ng test",
-    "e2e": "npm run postinstall:web && ng e2e"
+    "e2e": "npm run postinstall:web && ng e2e",
+    "ship": "npm run build:prod && npx electron-builder build -p onTag"
   },
-  "dependencies": {},
+  "dependencies": {
+    "electron-updater": "^3.1.1"
+  },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.6.3",
     "@angular/cli": "6.0.5",
@@ -52,6 +45,7 @@
     "@angular/router": "6.0.5",
     "@ngx-translate/core": "10.0.1",
     "@ngx-translate/http-loader": "3.0.1",
+    "@types/es6-collections": "^0.5.31",
     "@types/jasmine": "2.8.7",
     "@types/jasminewd2": "2.0.3",
     "@types/node": "8.9.4",
